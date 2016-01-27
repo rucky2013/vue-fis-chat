@@ -1,0 +1,81 @@
+.w-message {
+  padding: 30px 0 0;
+  position: relative;
+}
+.w-message header{
+  position: absolute;
+  background-color: rgba(65,184,131,0.65);
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  color: #fff;
+}
+.w-message header span{
+  font-weight: bold;
+}
+.w-message section{
+  overflow-y: scroll;
+  height: 100%;
+}
+.w-message .main{
+  background: none !important;
+}
+.w-message li {
+  margin-bottom: 15px;
+}
+.w-message .time {
+  margin: 7px 0;
+  text-align: center;
+}
+.w-message .time > span {
+  display: inline-block;
+  padding: 0 18px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.70);
+}
+.w-message .avatar {
+  float: left;
+  margin: 0 10px 0 0;
+  border-radius: 3px;
+  background-color: #f5f6f7;
+}
+.w-message .text {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  max-width: calc(100% - 40px);
+  min-height: 30px;
+  line-height: 2.5;
+  font-size: 12px;
+  text-align: left;
+  word-break: break-all;
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+.w-message .text:before {
+  content: " ";
+  position: absolute;
+  top: 9px;
+  right: 100%;
+  border: 6px solid transparent;
+  border-right-color: #fafafa;
+}
+.w-message .self {
+  text-align: right;
+}
+.w-message .self .avatar {
+  float: right;
+  margin: 0 0 0 10px;
+}
+.w-message .self .text {
+  background-color: #b2e281;
+}
+.w-message .self .text:before {
+  right: inherit;
+  left: 100%;
+  border-right-color: transparent;
+  border-left-color: #b2e281;
+}

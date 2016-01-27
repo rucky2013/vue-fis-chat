@@ -1,0 +1,23 @@
+{
+  "name": "vue-fis-chat",
+  "version": "1.0.0",
+  "description": "a simple fis3+vue chat demo!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "fis3"
+  ],
+  "author": "CheneyLiu",
+  "license": "MIT",
+  "ependencies": {
+
+  },
+  "devDependencies": {
+    "fis3-hook-commonjs": "*",
+    "fis3-postpackager-loader": "*",
+    "fis3-hook-module": "*"
+  }
+}

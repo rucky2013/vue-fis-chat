@@ -1,0 +1,24 @@
+<div>
+  <div class="sidebar">
+    <w-card
+        :user="user"
+        :search.sync="search"
+    ></w-card>
+    <w-list
+        :user-list="userList"
+        :session="session"
+        :session-index.sync="sessionIndex"
+        :search="search"
+    ></w-list>
+  </div>
+  <div class="main">
+    <w-message
+        :session="session"
+        :user="user"
+        :user-list="userList"
+    ></w-message>
+    <w-text
+        :session="session"
+    ></w-text>
+  </div>
+</div>
