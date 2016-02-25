@@ -5,8 +5,6 @@
  */
 var Vue = require('modules/vue.js');
 
-var Vue = require('modules/vue.js');
-
 module.exports = Vue.extend({
   props: ['userList', 'sessionIndex', 'session', 'search'],
   template: __inline('list.html'),

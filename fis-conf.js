@@ -44,20 +44,27 @@ fis.match('::packager', {
   }),
   packager: fis.plugin('map'),
 
-}).match('**/*.css', {
-  packTo: '/static/pkg/all.css' //css打成一个包
+})
+
+//开启组件同名依赖
+fis.match('*.{html,js,css}', {
+  useSameNameRequire: true
 });
+
 
 //  生产模式
 fis.media('prod')
+    .match('**/*.css', {
+      packTo: '/static/pkg/all.css' //css打成一个包
+    })
     .match('**.js', {
       optimizer: fis.plugin('uglify-js')
     })
     .match('modules/*.js',{
-      packTo: '/static/pkg/common.js'
+      packTo: '/static/pkg/base.js'
     })
     .match('components/**/*.js',{
-      packTo: '/static/pkg/app.js'
+      packTo: '/static/pkg/all.js'
     })
     .match('**.css', {
       optimizer: fis.plugin('clean-css')
@@ -65,3 +72,4 @@ fis.media('prod')
 
 
 // 住使用愉快
+// console.log(fis.match('set'));
